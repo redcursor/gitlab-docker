@@ -19,3 +19,11 @@ Before running docker-compose we should do below steps:
  - open the **URL** we have configured e.g. `gitlab.examp1e.ir`
  - for first login it asks for **Admin Password** to be set, set it and finished
  - login page should be available over HTTPS, e.g. `https://gitlab.examp1e.ir/users/sign_in`
+
+Here is the screenshot of a finished one:  
+![gitlab-login-page](img/g1ce-login-page.png)
+
+
+## g2ee
+This is gitlab with enterprise-edition (ee) using `docker-compose`
+
