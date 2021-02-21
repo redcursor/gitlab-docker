@@ -1,0 +1,16 @@
+web:
+  image: 'gitlab/gitlab-ce:latest'
+  restart: always
+  hostname: 'gitlab.examp1e.ir'
+  environment:
+    GITLAB_OMNIBUS_CONFIG: |
+      external_url 'https://gitlab.examp1e.ir'
+      # Add any other gitlab.rb configuration here, each on its own line
+  ports:
+    - '80:80'
+    - '443:443'
+    - '22:22'
+  volumes:
+    - '$GITLAB_HOME/config:/etc/gitlab'
+    - '$GITLAB_HOME/logs:/var/log/gitlab'
+    - '$GITLAB_HOME/data:/var/opt/gitlab'
